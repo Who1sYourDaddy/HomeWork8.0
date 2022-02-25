@@ -36,14 +36,16 @@ public class Main {
         System.out.println("    TaskTwo");
         //fullName = fullName.replace()
         fullName = fullName.toUpperCase(Locale.ROOT);
-        System.out.println(fullName);
+        System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName);
 
+//        - в задании сказано, что надо в качествен исходных данных для fullName взять
+//        "Иванов Семён Семёнович", но строка fullName уже занята. Надо было полностью менять сначала содержание строки
+//        или можно было немного изменить переменную, как в решении ниже?
 
-            System.out.println("    Task Three");
-            String fullName2 = "Иванов Семён Семёнович";
-            fullName = fullName2.replace("ё", "е");
-            System.out.println(fullName2);
-
+        System.out.println("    Task Three");
+        String fullName2 = "Иванов Семён Семёнович";
+        fullName2 = fullName2.replace("ё", "е");
+        System.out.println("Данные ФИО сотрудника — " + fullName2);
 
     }
 }
